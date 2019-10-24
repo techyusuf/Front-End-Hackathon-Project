@@ -1,0 +1,137 @@
+<html>
+<head>
+    <title>TRAIN SEARCH | HOMEPAGE</title>
+    </head>
+    <script >
+        
+function captcha()
+        {
+            
+    var min=4; 
+    var max=8;  
+    var random =Math.floor(Math.random() * (+max - +min)) + +min; 
+    document.getElementById("captchaImg").src=random+".jpg";  
+        }
+  function myFunction() {
+  document.body.style.backgroundColor = "darkred";
+        }
+  function myFunction2() {
+  document.body.style.backgroundColor = "darkorchid";
+}
+    function myFunction3() {
+  document.body.style.backgroundColor ="orangered";
+}
+function myFunction4() {
+  document.body.style.backgroundColor = "aqua";
+}
+function myFunction5() {
+  document.body.style.backgroundColor = "chartreuse";
+}function myFunction6() {
+  document.body.style.backgroundColor = "deeppink";
+}
+        
+function validateForm() {
+    
+if (isEmpty(document.getElementById('data_2').value.trim())) {
+alert('First name is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_3').value.trim())) {
+alert('Last name is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_4').value.trim())) {
+alert('Phone is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_5').value.trim())) {
+alert('Email is required!');
+return false;
+}
+if (!validateEmail(document.getElementById('data_5').value.trim())) {
+alert('Email must be a valid email address!');
+return false;
+}
+if (isEmpty(document.getElementById('data_6').value.trim())) {
+alert('Arrival date is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_7').value.trim())) {
+alert('Departure date is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_8').value.trim())) {
+alert('Number of adults is required!');
+return false;
+}
+return true;
+}
+function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+function validateEmail(email) {
+var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+return isEmpty(email) || re.test(email);
+}
+        
+</script>
+        
+        <link rel="stylesheet" type="text/css" href="style_irctc.css"/>
+        <div class="navbar">
+        
+
+        <!--<span class="logo">
+        </span>-->
+<div class="head">
+    <h1>CAL NEWPORT</h1>
+            </div>      
+            <div class="btn">
+            
+            <a href="" id="active">HOME</a>
+            <a href="" >ABOUT</a>
+            <a href="">BOOKS</a>
+            <a href="">PROJECTS</a>
+            <a href="">BLOGS</a>
+            <a href="contactus.html">CONTACTS</a>
+            </div>
+
+<button type="button" id="red"  onclick="myFunction()"></button>
+<button type="button" id="darkorchid" onclick="myFunction2()"></button>
+<button type="button" id="orangered"  onclick="myFunction3()"></button>
+<button type="button" id="aqua" onclick="myFunction4()"></button>
+<button type="button" id="chartreuse"  onclick="myFunction5()"></button>
+<button type="button" id="deeppink" onclick="myFunction6()"></button>
+          <section class="main-login">
+        <div class="content">
+            <p style="font-size: 30px;">“I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.”</p>
+            <p>NOW AVIALABLE!</p>
+            <br>
+               <p style="font-style: italic;font-size: 20px">You've gotta dance like there's nobody watching,
+Love like you'll never be hurt,
+Sing like there's nobody listening,
+And live like it's heaven on earth.
+- William W. Purkey
+There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”</p>
+            <p style="font-style: italic;font-size: 20px">“Good friends, good books, and a sleepy conscience: this is the ideal life.”
+<br>― Mark Twain</p>
+            <a href="https://www.goodreads.com/quotes/tag/life"><button type="button"  onclick="" style="float: right;color: white;background-color: black">MORE ABOUT DEEPWORK</button></a>
+            <br><br><hr>
+            <br>
+            <p>AVIALABLE NOW:</p>
+            <section class="main_login2">
+                <div class="content2">
+                    <div>
+                     <img class="login-image" src="B_Id_383111_school-children45.jpg" height="130px" width="150px"><p style="float: right;font-size: 20px;">I think that life is difficult. People have challenges. <br>Family members get sick, people get older,<br> you don't always get the job or the promotion that you want. <br>You have conflicts in your life. And really, life is about your resilience<br> and your ability to go through your life and all of the ups and downs with a positive attitude.</p></div>
+                  </div>
+                
+            </section>
+
+        </div>
+        <div class="login-image">
+            <div >
+            <img class="login-image" src="B_Id_383111_school-children45.jpg" height="650px" width="300px">
+        </div>
+        
+        </div>
+    </section>
+    
+    </body></html>
+        
